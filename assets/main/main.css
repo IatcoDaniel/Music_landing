@@ -278,3 +278,8 @@ h1{
     width: 400px;
     height: 700px;
 }
+
+#volume-t{
+    color: white;
+    font-size: 40px;
+}
