@@ -160,11 +160,34 @@ h1{
 
 #Top_50 .top-50-content{
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(10, 1fr);
     grid-column-gap: 10px;
     grid-row-gap: 30px;
     list-style: none;
+}
+
+@media screen and ( max-width: 1900px) {
+    #Top_50 .top-50-content{
+        grid-template-columns: repeat(3, 1fr) !important;
+        grid-template-rows: repeat(10, 1fr) !important;
+    }
+
+}
+
+@media screen and ( max-width: 1400px) {
+    #Top_50 .top-50-content{
+        grid-template-columns: repeat(2, 1fr) !important;
+        grid-template-rows: repeat(10, 1fr) !important;
+    }
+
+}
+
+@media screen and ( max-width: 1008px) {
+    #Top_50 .top-50-content{
+        display: block;
+    }
+
 }
 
 li{
@@ -175,4 +198,20 @@ li{
 
 #Top_50 img{
     width: 400px;
+}
+
+#Top_50 h1{
+    font-size: 40px;
+}
+
+
+#Top_50 a{
+    text-decoration: none;
+    font-size: 40px;
+    color: white;
+}
+
+#Top_50 a:hover{
+    font-size: 42px;
+    color: yellow;
 }
