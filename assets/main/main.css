@@ -26,6 +26,12 @@ header ul.topnav li a {
     text-decoration: none;
 }
 
+@media only screen and (max-width: 1000px) {
+    header ul.topnav li a {
+        display: block !important;
+    }
+}
+
 header ul.topnav li a:hover:not(.active) {
     background-color: red;
 }
@@ -150,7 +156,7 @@ p{
 }
 
 #Top_50{
-    margin-top: 1200px;
+    margin-top: 800px;
     text-align: center;
 }
 
@@ -246,7 +252,6 @@ h1{
     }
 }
 
-
 @media screen and (max-width: 569px){
     #aplicatie .phone-box{
        display: inline-block !important;
@@ -257,4 +262,19 @@ h1{
     img{
         width: 100% !important;
     }
+}
+
+#aplicatie .phone-box li h1:hover{
+    color: yellow;
+}
+
+#oferte h1{
+    font-size: 45px;
+    text-align: center;
+}
+
+.sound-hold{
+    display: inline;
+    width: 400px;
+    height: 700px;
 }
