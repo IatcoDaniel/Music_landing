@@ -190,7 +190,7 @@ h1{
 
 }
 
-li{
+#Top_50 li{
     border: 1px solid purple;
     text-align: center;
     color: white;
@@ -219,4 +219,42 @@ li{
 #aplicatie h1{
     font-size: 40px;
     text-align: center;
+}
+
+#aplicatie .phone-box{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 400px;
+    grid-row-gap: 0px;
+    list-style: none;
+}
+
+.iphone-image{
+    border-radius: 30px;
+    background-image: url("../img/iph.jpg");
+    width: 400px;
+    height: 600px;
+}
+
+@media screen and (max-width: 1000px){
+    #aplicatie .phone-box{
+        grid-column-gap: 0 !important;
+    }
+    #aplicatie .iphone-image{
+       width: 350px !important;
+    }
+}
+
+
+@media screen and (max-width: 569px){
+    #aplicatie .phone-box{
+       display: inline-block !important;
+    }
+    #aplicatie .iphone-image{
+        width: 300px !important;
+    }
+    img{
+        width: 100% !important;
+    }
 }
