@@ -2,7 +2,7 @@
 
 body {
     margin: 0;
-    background-color: rgba(124, 44, 44, 0.3);
+    background-color: black;
     font-family: 'Gelasio', serif;
 }
 
@@ -149,5 +149,26 @@ p{
     font-size: 15px;
 }
 
+#Top_50{
+    margin-top: 1200px;
+    text-align: center;
+}
 
+h1{
+    color: white;
+}
 
+#Top_50 .top-50-content{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 30px;
+    list-style: none;
+}
+
+li{
+    border: 1px solid purple;
+    text-align: center;
+    color: white;
+}
